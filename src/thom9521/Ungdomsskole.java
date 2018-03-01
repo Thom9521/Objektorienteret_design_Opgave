@@ -67,7 +67,11 @@ public class Ungdomsskole {
 
 
     }
-
+/*
+    public String parkousInfo(){
+        return
+    }
+*/
 
     }
 

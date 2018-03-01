@@ -6,8 +6,6 @@ public class Elever {
     private String efternavn;
     private int telefonnummer;
 
-    public Elever() {
-    }
 
     public Elever(String navn, String efternavn, int telefonnummer) {
         this.navn = navn;
@@ -39,5 +37,34 @@ public class Elever {
         this.telefonnummer = telefonnummer;
     }
 
+
+    public void parkourKursus(){
+        System.out.println(navn + " " +  efternavn + " er tilmeldt til kursuet: parkour.");
+    }
+    public void selvforsvarKursus(){
+        System.out.println(navn + " " +  efternavn + " er tilmeldt til kursuet: selvforsvar.");
+    }
+
+    public void værkstedsfagKursus(){
+        System.out.println(navn + " " +  efternavn + " er tilmeldt til kursuet: værkstedsfag.");
+    }
+
+    public void keramikKursus(){
+        System.out.println(navn + " " +  efternavn + " er tilmeldt til kursuet: keramik.");
+    }
+
+    public void metalsløjdKursus(){
+        System.out.println(navn + " " +  efternavn + " er tilmeldt til kursuet: metalsløjd.");
+    }
+
+    public void franskKursus(){
+        System.out.println(navn + " " +  efternavn + " er tilmeldt til kursuet: fransk.");
+    }
+    public void kinesiskKursus(){
+        System.out.println(navn + " " +  efternavn + " er tilmeldt til kursuet: kinesisk.");
+    }
+    public void knallertKursus(){
+        System.out.println(navn + " " +  efternavn + " er tilmeldt til kursuet: knallertkursus.");
+    }
 
 }
