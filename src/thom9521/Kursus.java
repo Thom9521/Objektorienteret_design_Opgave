@@ -6,6 +6,7 @@ public class Kursus {
     private Lokale lokale;
     private Undervisere undervisere;
     private Deltagere deltagere;
+    private Tidspunkt tidspunkt;
 
 
     public Kursus(){
@@ -48,5 +49,13 @@ public class Kursus {
 
     public void setDeltagere(Deltagere deltagere) {
         this.deltagere = deltagere;
+    }
+
+    public Tidspunkt getTidspunkt() {
+        return tidspunkt;
+    }
+
+    public void setTidspunkt(Tidspunkt tidspunkt) {
+        this.tidspunkt = tidspunkt;
     }
 }

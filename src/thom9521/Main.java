@@ -5,5 +5,9 @@ public class Main {
 
         Ungdomsskole skole = new Ungdomsskole();
 
+        Elever elev1 = new Elever();
+
+skole.parkourKursus();
+
     }
 }

@@ -2,20 +2,20 @@ package thom9521;
 
 public class Deltagere {
 
-    private int antalDeltager;
+    private int antalDeltagere;
 
     public Deltagere() {
     }
 
-    public Deltagere(int antalDeltager) {
-        this.antalDeltager = antalDeltager;
+    public Deltagere(int antalDeltagere) {
+        this.antalDeltagere = antalDeltagere;
     }
 
-    public int getAntalDeltager() {
-        return antalDeltager;
+    public int getAntalDeltagere() {
+        return antalDeltagere;
     }
 
-    public void setAntalDeltager(int antalDeltager) {
-        this.antalDeltager = antalDeltager;
+    public void setAntalDeltagere(int antalDeltagere) {
+        this.antalDeltagere = antalDeltagere;
     }
 }

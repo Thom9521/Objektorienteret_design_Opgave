@@ -7,7 +7,10 @@ public class BrugerSystem {
     private String skole;
     private String klasse;
     private String telefonnummer;
+    private String password;
 
+    public BrugerSystem() {
+    }
 
     public BrugerSystem(String navn, int alder, String skole, String klasse, String telefonnummer) {
         this.navn = navn;
@@ -15,6 +18,15 @@ public class BrugerSystem {
         this.skole = skole;
         this.klasse = klasse;
         this.telefonnummer = telefonnummer;
+    }
+
+    public BrugerSystem(String navn, int alder, String skole, String klasse, String telefonnummer, String password) {
+        this.navn = navn;
+        this.alder = alder;
+        this.skole = skole;
+        this.klasse = klasse;
+        this.telefonnummer = telefonnummer;
+        this.password = password;
     }
 
     public String getNavn() {
@@ -55,5 +67,13 @@ public class BrugerSystem {
 
     public void setTelefonnummer(String telefonnummer) {
         this.telefonnummer = telefonnummer;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
