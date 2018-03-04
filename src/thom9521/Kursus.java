@@ -20,6 +20,7 @@ public class Kursus {
 
     public Kursus(String navn) {
         this.navn = navn;
+
     }
 
 
@@ -30,14 +31,12 @@ public class Kursus {
     }
 
 
-//Metode til at få informationen for givende kursus
+//Metode til at få informationen for det givende kursus
     public void info() {
         System.out.println(navn + " består af følgende elever: " + elever + " og har " + undervisere.getNavn()
         + " som underviser. Undervisningen foregår "+ ugedage + " i lokale " + lokale + " klokken " + tidspunkt.getTidspunkt()
         + ", og varer " + tidspunkt.getTid() + " minutter.");
     }
-
-
 
 
     public Ugedage getUgedage() {
