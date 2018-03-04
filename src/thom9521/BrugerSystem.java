@@ -1,4 +1,5 @@
 package thom9521;
+//Klasse til at oprette brugere (elever, undervisere)
 
 public class BrugerSystem {
 
@@ -12,12 +13,11 @@ public class BrugerSystem {
     public BrugerSystem() {
     }
 
-    public BrugerSystem(String navn, int alder, String skole, String klasse, String telefonnummer) {
+    public BrugerSystem(String navn, int alder, String password, String telefonnummer) {
         this.navn = navn;
         this.alder = alder;
-        this.skole = skole;
-        this.klasse = klasse;
         this.telefonnummer = telefonnummer;
+        this.password = password;
     }
 
     public BrugerSystem(String navn, int alder, String skole, String klasse, String telefonnummer, String password) {

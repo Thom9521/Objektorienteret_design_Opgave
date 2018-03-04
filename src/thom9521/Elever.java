@@ -1,43 +1,15 @@
 package thom9521;
+//Klasse til oprettelse af elever, som extender BrugerSystem
 
-public class Elever {
+public class Elever extends BrugerSystem{
 
-    private String navn;
-    private String efternavn;
-    private int telefonnummer;
+    public Elever(){}
 
-
-    public Elever(String navn, String efternavn, int telefonnummer) {
-        this.navn = navn;
-        this.efternavn = efternavn;
-        this.telefonnummer = telefonnummer;
+    public Elever(String navn, int alder, String skole, String klasse, String telefonnummer, String password) {
+        super(navn, alder, skole, klasse, telefonnummer, password);
     }
 
-    public String getNavn() {
-        return navn;
-    }
-
-    public void setNavn(String navn) {
-        this.navn = navn;
-    }
-
-    public String getEfternavn() {
-        return efternavn;
-    }
-
-    public void setEfternavn(String efternavn) {
-        this.efternavn = efternavn;
-    }
-
-    public int getTelefonnummer() {
-        return telefonnummer;
-    }
-
-    public void setTelefonnummer(int telefonnummer) {
-        this.telefonnummer = telefonnummer;
-    }
-
-
+/*
     public void parkourKursus(){
         System.out.println(navn + " " +  efternavn + " er tilmeldt til kursuet: parkour.");
     }
@@ -66,5 +38,5 @@ public class Elever {
     public void knallertKursus(){
         System.out.println(navn + " " +  efternavn + " er tilmeldt til kursuet: knallertkursus.");
     }
-
+*/
 }

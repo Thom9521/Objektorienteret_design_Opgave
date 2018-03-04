@@ -1,4 +1,5 @@
 package thom9521;
+//Klasse som hjælper med at sætte tidspunktet for hvornår kursuserne begynder og hvor længe de varer.
 
 public class Tidspunkt {
 

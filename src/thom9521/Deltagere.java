@@ -1,4 +1,5 @@
 package thom9521;
+//Klasse der hjælper med at sætte hvor mange deltagere der må være
 
 public class Deltagere {
 

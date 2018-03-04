@@ -1,23 +1,44 @@
 package thom9521;
+//Klasse som opretter kursuser
+
+import java.util.ArrayList;
 
 public class Kursus {
 
+    ArrayList<String> elever = new ArrayList<String>();
+    private Elever elev;
     private Ugedage ugedage;
     private Lokale lokale;
     private Undervisere undervisere;
     private Deltagere deltagere;
     private Tidspunkt tidspunkt;
+    private String navn;
 
 
     public Kursus(){
     }
 
-    public Kursus(Ugedage ugedage, Lokale lokale, Undervisere undervisere, Deltagere deltagere) {
-        this.ugedage = ugedage;
-        this.lokale = lokale;
-        this.undervisere = undervisere;
-        this.deltagere = deltagere;
+    public Kursus(String navn) {
+        this.navn = navn;
     }
+
+
+    public void tilføjElev(Elever elev){
+        System.out.println(elev.getNavn() + " er tilføjet til " + navn + ".");
+        this.elev = elev;
+        elever.add(elev.getNavn());
+    }
+
+
+//Metode til at få informationen for givende kursus
+    public void info() {
+        System.out.println(navn + " består af følgende elever: " + elever + " og har " + undervisere.getNavn()
+        + " som underviser. Undervisningen foregår "+ ugedage + " i lokale " + lokale + " klokken " + tidspunkt.getTidspunkt()
+        + ", og varer " + tidspunkt.getTid() + " minutter.");
+    }
+
+
+
 
     public Ugedage getUgedage() {
         return ugedage;
@@ -57,5 +78,20 @@ public class Kursus {
 
     public void setTidspunkt(Tidspunkt tidspunkt) {
         this.tidspunkt = tidspunkt;
+    }
+
+    public Elever getElev() {
+        return elev;
+    }
+
+
+
+
+    public String getNavn() {
+        return navn;
+    }
+
+    public void setNavn(String navn) {
+        this.navn = navn;
     }
 }
