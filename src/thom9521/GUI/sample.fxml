@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thom9521.GUI.Controller">
    <children>
       <Label layoutX="45.0" layoutY="44.0" prefHeight="43.0" prefWidth="532.0" text="Velkommen til Næstved Ungdomsskole!">
          <font>
@@ -26,12 +26,13 @@
          <font>
             <Font size="15.0" />
          </font></Label>
-      <TextField layoutX="243.0" layoutY="172.0" />
-      <PasswordField layoutX="243.0" layoutY="224.0" />
-      <Button layoutX="243.0" layoutY="312.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="113.0" text="Log in">
+      <TextField fx:id="telefonField" layoutX="243.0" layoutY="172.0" onAction="#handleButtonAction" />
+      <PasswordField fx:id="passwordField" layoutX="243.0" layoutY="224.0" onAction="#handleButtonAction" />
+      <Button fx:id="loginButton" layoutX="243.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="113.0" text="Log in">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
+      <Label fx:id="loginText" layoutX="469.0" layoutY="200.0" prefHeight="25.0" prefWidth="103.0" />
    </children>
 </Pane>
