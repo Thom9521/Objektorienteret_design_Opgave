@@ -3,10 +3,8 @@ package thom9521.GUI;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;;
+import javafx.scene.control.*;
+
 
 
 
@@ -20,10 +18,15 @@ public class Controller {
     private Button loginButton;
     @FXML
     private Label loginText;
+    @FXML
+    private Tab tabLogin;
+    @FXML
+    private Tab tabKurser;
+
 
 
     @FXML
-    private void handleButtonAction(ActionEvent e) {
+    private void loginButtonAction(ActionEvent e) {
     int tnr;
     int pass;
         tnr = Integer.parseInt(telefonField.getText());
@@ -42,4 +45,5 @@ public class Controller {
         }
 
     }
-}}
+}
+}
