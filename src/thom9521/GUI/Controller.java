@@ -1,6 +1,6 @@
 package thom9521.GUI;
 
-import javafx.beans.property.IntegerProperty;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -20,21 +20,6 @@ public class Controller {
     private Button loginButton;
     @FXML
     private Label loginText;
-/*
-    public boolean checkLogin(){
-        boolean check = false;
-        if(telfonField.getText() == "30306406"){
-            if (passwordField.getText() == "test") {
-                check = true;
-            }
-                else{
-                    check = false;}
-
-                } return check;
-
-            }
-*/
-
 
 
     @FXML
