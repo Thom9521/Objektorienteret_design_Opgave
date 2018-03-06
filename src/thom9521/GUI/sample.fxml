@@ -28,11 +28,11 @@
          </font></Label>
       <TextField fx:id="telefonField" layoutX="243.0" layoutY="172.0" onAction="#handleButtonAction" />
       <PasswordField fx:id="passwordField" layoutX="243.0" layoutY="224.0" onAction="#handleButtonAction" />
-      <Button fx:id="loginButton" layoutX="243.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="113.0" text="Log in">
+      <Button fx:id="loginButton" layoutX="243.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="113.0" text="Log in">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Label fx:id="loginText" layoutX="469.0" layoutY="200.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label fx:id="loginText" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="370.0" prefHeight="25.0" prefWidth="300.0" />
    </children>
 </Pane>
